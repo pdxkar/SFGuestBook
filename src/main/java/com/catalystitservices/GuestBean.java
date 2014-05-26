@@ -26,11 +26,11 @@ public class GuestBean implements Serializable {
             new ArrayList<Guest>(Arrays.asList(
      
             new Guest(10L, "guest1", "guest1@email.com"),
-            new Guest(10L, "guest2", "guest1@email.com"),
-            new Guest(10L, "guest3", "guest1@email.com"),
-            new Guest(10L, "guest4", "guest1@email.com"),
-            new Guest(10L, "guest5", "guest1@email.com"),
-            new Guest(10L, "guest6", "guest1@email.com")
+            new Guest(10L, "guest2", "guest2@email.com"),
+            new Guest(10L, "guest3", "guest3@email.com"),
+            new Guest(10L, "guest4", "guest4@email.com"),
+            new Guest(10L, "guest5", "guest5@email.com"),
+            new Guest(10L, "guest6", "guest6@email.com")
         ));
     
     public ArrayList<Guest> getGuestList() {

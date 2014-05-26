@@ -1,13 +1,6 @@
 //package com.catalystitservices.guest.bo.impl;
 // 
 //import java.util.List;
-// 
-//
-//
-//
-//
-//
-//
 //import com.catalystitservices.guest.bo.GuestBo;
 //import com.catalystitservices.guest.dao.GuestDao;
 //import com.catalystitservices.guest.model.Guest;

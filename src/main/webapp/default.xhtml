@@ -34,38 +34,44 @@
                     <h:inputText value="#{g.address}" size="10" maxlength="10" rendered="#{g.editable}" />
                     <h:outputText value="#{g.address}" rendered="#{not g.editable}" />
                 </h:column>
+                
+<!--                 <h:column>
+				      <f:facet name="header">Action</f:facet>
+ 				      <h:commandLink value="Edit" action="#{guest.editAction(g)}" rendered="#{not g.editable}" />
+          		</h:column>  -->
 
   
-                <h:column>
+                  <h:column>
                     <f:facet name="header">Edit</f:facet>
-                    <h:commandLink value="Edit" immediate="true" action="#{guest.editAction(g)}" rendered="#{not g.editable}" />
-                    <h:commandLink value="Save Changes" immediate="true" action="#{guest.saveAction}" rendered="#{g.editable}" />
-                </h:column>
+                    <h:commandLink value="Edit" action="#{guest.editAction(g)}" rendered="#{not g.editable}" />
+                    <h:commandLink value="Save Changes" action="#{guest.saveAction}" rendered="#{g.editable}" />
+                </h:column>  
 
                 <h:column>
                     <f:facet name="header">Delete</f:facet>
-                    <h:commandLink value="Delete" immediate="true" action="#{guest.deleteAction(g)}" rendered="#{not g.editable}" />
+                    <h:commandLink value="Delete" action="#{guest.deleteAction(g)}" rendered="#{not g.editable}" />
                 </h:column>                    
 
-            </h:dataTable>
+             </h:dataTable>
+<!--				<h:commandButton value="Save Changes" action="#{guest.saveAction}" /> -->
 
             <h3>Enter guest</h3>
             <table>
                 <tr>
                     <td styleClass="celluleLeft">Guest ID :</td>
-                    <td><h:inputText id="guestId" size="10" maxlength="10" value="#{guest.guestId}" required="true" /></td>
+                    <td><h:inputText id="guestId" size="10" maxlength="10" value="#{guest.guestId}" required="false" /></td>
                 </tr>
                 <tr>
                     <td styleClass="celluleLeft">Guest Name :</td>
-                    <td><h:inputText id="name" size="20" maxlength="20" value="#{guest.name}" required="true" /></td>
+                    <td><h:inputText id="name" size="20" maxlength="20" value="#{guest.name}" required="false" /></td>
                 </tr>
                 <tr>
                     <td styleClass="celluleLeft">Email Address :</td>
-                    <td><h:inputText id="address" size="5" maxlength="5" value="#{guest.address}" required="true" /></td>
+                    <td><h:inputText id="address" size="5" maxlength="5" value="#{guest.address}" required="false" /></td>
                 </tr>
  
             </table>
-            <h:commandButton value="Add New guest" action="#{guest.addAction}" rendered="#{not guest.editable}" />
+            <h:commandButton value="Add New guest" action="#{guest.addAction}" rendered="#{not guest.editable}" /> 
 
         </h:form>
     </h:body>

@@ -1,9 +1,6 @@
 //package com.catalystitservices.guest.dao;
 // 
 //import java.util.List;
-// 
-//
-//
 //import com.catalystitservices.guest.model.Guest;
 // 
 //public interface GuestDao{
