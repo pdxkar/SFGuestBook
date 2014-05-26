@@ -7,6 +7,7 @@ import java.util.Arrays;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.bean.RequestScoped;
+import com.catalystitservices.guest.model.Guest;
 
 @ManagedBean(name = "guest")
 @ViewScoped
@@ -108,7 +109,7 @@ public class GuestBean implements Serializable {
         return null;
     }
 
-    public static class Guest {
+/*    public static class Guest {
 
         long guestId;
         String name;
@@ -153,5 +154,5 @@ public class GuestBean implements Serializable {
             this.address = address;
         }
 
-     }
+     }*/
 }
