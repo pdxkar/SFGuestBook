@@ -11,8 +11,13 @@
     		org.springframework.web.jsf.el.SpringBeanFacesELResolver
     	</el-resolver>
   	</application>
+<!-- 	<managed-bean>
+		<managed-bean-name>guest</managed-bean-name>
+		<managed-bean-class>com.catalystitservices.GuestBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean> -->
  	
-	<managed-bean>
+<!-- 	<managed-bean>
 		<managed-bean-name>guest</managed-bean-name>
 		<managed-bean-class>com.catalystitservices.GuestBean</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
@@ -20,6 +25,6 @@
 			<property-name>guestBo</property-name>
 			<value>#{guestBo}</value>
 		</managed-property>
-	</managed-bean>
+	</managed-bean> -->
  
 </faces-config>

@@ -1,84 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"   
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:f="http://java.sun.com/jsf/core"
-      >
-<!--     <h:head>
-    	<h:outputStylesheet library="css" name="table-style.css"  />
-    </h:head> -->
- 
+       xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"> 
+    <h:head>
+        <h:outputStylesheet library="css" name="table-style.css"  />
+    </h:head>
     <h:body>
- 
-    	<h1>GuestBook</h1>
- <h:form>
- 		<h:dataTable value="#{guest.getGuestList()}" var="c"
-    			styleClass="guest-table"
-    			headerClass="guest-table-header"
-    			rowClasses="guest-table-odd-row,guest-table-even-row">
- 
-    		<h:column>
-    			<f:facet name="header">Guest ID</f:facet>
-    				<h:inputText value="#{c.guestId}" size="10" rendered="#{c.editable}"/>
-    				<h:outputText value="#{c.guestId}" rendered="#{not c.editable}"/>
-    		</h:column>
- 
-    		<h:column>
-    			<f:facet name="header">Name</f:facet>
-    			<h:inputText value="#{c.name}" size="10" rendered="#{c.editable}"/>
-    				<h:outputText value="#{c.name}" rendered="#{not c.editable}"/>
-    		</h:column>
- 
- 			<h:column>
-    			<f:facet name="header">Email Address</f:facet>
-    			 <h:inputText value="#{c.address}" size="10" rendered="#{c.editable}"/>
-    				<h:outputText value="#{c.address}" rendered="#{not c.editable}"/>
-    		</h:column>
- 
-<!--     		<h:column>
-    			<f:facet name="header">
-    				Created Date
-				</f:facet>
-    				#{c.createdDate}
-    		</h:column> -->
-    		
-			<h:column>
-    			<f:facet name="header">Action</f:facet>
-    				<h:commandLink value="Edit" action="#{guest.editAction(c)}" rendered="#{not c.editable}" />
-			</h:column>
 
-    	</h:dataTable>
-    	
-    	<h:commandButton value="Save Changes" action="#{guest.saveAction}" />
- </h:form>
- 		<h2>Add New Guest</h2>
- 		<h:form>
+        <h1>GuestBook</h1>
+        
+        <h:form id="addGuest">
+            <h:dataTable value="#{guest.guestList}" var="g"
+                         styleClass="guest-table"
+                         headerClass="guest-table-header"
+                         rowClasses="guest-table-odd-row,guest-table-even-row">
+
+                <h:column>
+                    <f:facet name="header">Guest ID</f:facet>
+                    <h:inputText value="#{g.guestId}" size="10" maxlength="10" rendered="#{g.editable}" />
+                    <h:outputText value="#{g.guestId}" rendered="#{not g.editable}" />
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Guest Name</f:facet>
+                    <h:inputText value="#{g.name}" size="20" maxlength="20" rendered="#{g.editable}" />
+                    <h:outputText value="#{g.name}" rendered="#{not g.editable}" />
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Email Address</f:facet>
+                    <h:inputText value="#{g.address}" size="10" maxlength="10" rendered="#{g.editable}" />
+                    <h:outputText value="#{g.address}" rendered="#{not g.editable}" />
+                </h:column>
+
+  
+                <h:column>
+                    <f:facet name="header">Edit</f:facet>
+                    <h:commandLink value="Edit" immediate="true" action="#{guest.editAction(g)}" rendered="#{not g.editable}" />
+                    <h:commandLink value="Save Changes" immediate="true" action="#{guest.saveAction}" rendered="#{g.editable}" />
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Delete</f:facet>
+                    <h:commandLink value="Delete" immediate="true" action="#{guest.deleteAction(g)}" rendered="#{not g.editable}" />
+                </h:column>                    
+
+            </h:dataTable>
+
+            <h3>Enter guest</h3>
+            <table>
+                <tr>
+                    <td styleClass="celluleLeft">Guest ID :</td>
+                    <td><h:inputText id="guestId" size="10" maxlength="10" value="#{guest.guestId}" required="true" /></td>
+                </tr>
+                <tr>
+                    <td styleClass="celluleLeft">Guest Name :</td>
+                    <td><h:inputText id="name" size="20" maxlength="20" value="#{guest.name}" required="true" /></td>
+                </tr>
+                <tr>
+                    <td styleClass="celluleLeft">Email Address :</td>
+                    <td><h:inputText id="address" size="5" maxlength="5" value="#{guest.address}" required="true" /></td>
+                </tr>
  
- 			<h:panelGrid columns="3">
- 
-				Name: 
-				<h:inputText id="name" value="#{guest.name}" 
-					size="20" required="true"
-					label="Name" >
-				</h:inputText>
- 
-				<h:message for="name" style="color:red" />
- 
-				Email Address : 
-				<h:inputText id="address" value="#{guest.address}" 
-					cols="30" required="true"
-					label="Address" >
-				</h:inputText>
- 
-				<h:message for="address" style="color:red" />
- 
-			</h:panelGrid>
- 
-			<h:commandButton value="Submit" action="#{guest.addGuest()}" />
- 
- 		</h:form>
- 		 
+            </table>
+            <h:commandButton value="Add New guest" action="#{guest.addAction}" rendered="#{not guest.editable}" />
+
+        </h:form>
     </h:body>
- 
+
 </html>
