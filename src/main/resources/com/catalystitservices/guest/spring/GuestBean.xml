@@ -5,12 +5,12 @@
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
  
    	<bean id="guestBo" 
-         class="com.catalystitservices.customer.bo.impl.GuestBoImpl" >
+         class="com.catalystitservices.guest.bo.impl.GuestBoImpl" >
    		<property name="guestDao" ref="guestDao" />
    	</bean>
  
    	<bean id="guestDao" 
-         class="com.catalystitservices.customer.dao.impl.GuestDaoImpl" >
+         class="com.catalystitservices.guest.dao.impl.GuestDaoImpl" >
    		<property name="sessionFactory" ref="sessionFactory"></property>
    	</bean>
  

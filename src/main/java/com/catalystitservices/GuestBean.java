@@ -3,8 +3,8 @@ package com.catalystitservices;
 import java.io.Serializable;
 import java.util.List;
 
-import com.catalystitservices.customer.bo.GuestBo;
-import com.catalystitservices.customer.model.Guest;
+import com.catalystitservices.guest.bo.GuestBo;
+import com.catalystitservices.guest.model.Guest;
 
 public class GuestBean implements Serializable{
  

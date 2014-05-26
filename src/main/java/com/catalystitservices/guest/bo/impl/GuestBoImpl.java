@@ -1,13 +1,16 @@
-package com.catalystitservices.customer.bo.impl;
+package com.catalystitservices.guest.bo.impl;
  
 import java.util.List;
  
 
 
 
-import com.catalystitservices.customer.bo.GuestBo;
-import com.catalystitservices.customer.dao.GuestDao;
-import com.catalystitservices.customer.model.Guest;
+
+
+
+import com.catalystitservices.guest.bo.GuestBo;
+import com.catalystitservices.guest.dao.GuestDao;
+import com.catalystitservices.guest.model.Guest;
  
 public class GuestBoImpl implements GuestBo{
  

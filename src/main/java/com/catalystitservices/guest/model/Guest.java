@@ -1,4 +1,4 @@
-package com.catalystitservices.customer.model;
+package com.catalystitservices.guest.model;
 
 import java.util.Date;
 

@@ -1,12 +1,14 @@
-package com.catalystitservices.customer.dao.impl;
+package com.catalystitservices.guest.dao.impl;
  
 import java.util.Date;
 import java.util.List;
  
 
 
-import com.catalystitservices.customer.dao.GuestDao;
-import com.catalystitservices.customer.model.Guest;
+
+
+import com.catalystitservices.guest.dao.GuestDao;
+import com.catalystitservices.guest.model.Guest;
 
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
  

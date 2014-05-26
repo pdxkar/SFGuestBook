@@ -1,9 +1,10 @@
-package com.catalystitservices.customer.dao;
+package com.catalystitservices.guest.dao;
  
 import java.util.List;
  
 
-import com.catalystitservices.customer.model.Guest;
+
+import com.catalystitservices.guest.model.Guest;
  
 public interface GuestDao{
  

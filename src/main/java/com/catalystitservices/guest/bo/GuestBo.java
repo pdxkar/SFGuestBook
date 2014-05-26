@@ -1,9 +1,10 @@
-package com.catalystitservices.customer.bo;
+package com.catalystitservices.guest.bo;
  
 import java.util.List;
  
 
-import com.catalystitservices.customer.model.Guest;
+
+import com.catalystitservices.guest.model.Guest;
  
 public interface GuestBo{
  
