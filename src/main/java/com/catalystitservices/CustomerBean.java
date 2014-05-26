@@ -1,10 +1,10 @@
-package com.mkyong;
+package com.catalystitservices;
 
 import java.io.Serializable;
 import java.util.List;
 
-import com.mkyong.customer.bo.CustomerBo;
-import com.mkyong.customer.model.Customer;
+import com.catalystitservices.customer.bo.CustomerBo;
+import com.catalystitservices.customer.model.Customer;
 
 public class CustomerBean implements Serializable{
  

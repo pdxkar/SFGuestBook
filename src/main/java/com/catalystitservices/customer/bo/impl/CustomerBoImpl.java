@@ -1,10 +1,13 @@
-package com.mkyong.customer.bo.impl;
+package com.catalystitservices.customer.bo.impl;
  
 import java.util.List;
  
-import com.mkyong.customer.bo.CustomerBo;
-import com.mkyong.customer.dao.CustomerDao;
-import com.mkyong.customer.model.Customer;
+
+
+
+import com.catalystitservices.customer.bo.CustomerBo;
+import com.catalystitservices.customer.dao.CustomerDao;
+import com.catalystitservices.customer.model.Customer;
  
 public class CustomerBoImpl implements CustomerBo{
  

@@ -8,6 +8,6 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 	<import resource="classes/config/spring/beans/HibernateSessionFactory.xml"/>
  
 	<!-- Beans Declaration -->
-	<import resource="classes/com/mkyong/customer/spring/CustomerBean.xml"/>
+	<import resource="classes/com/catalystitservices/customer/spring/CustomerBean.xml"/>
  
 </beans>

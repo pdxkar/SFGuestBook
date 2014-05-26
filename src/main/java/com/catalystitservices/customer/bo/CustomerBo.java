@@ -1,8 +1,9 @@
-package com.mkyong.customer.bo;
+package com.catalystitservices.customer.bo;
  
 import java.util.List;
  
-import com.mkyong.customer.model.Customer;
+
+import com.catalystitservices.customer.model.Customer;
  
 public interface CustomerBo{
  

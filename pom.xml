@@ -4,11 +4,11 @@
   http://maven.apache.org/maven-v4_0_0.xsd">
   
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.mkyong.common</groupId>
-  <artifactId>JavaServerFaces</artifactId>
+  <groupId>com.catalystitservices.common</groupId>
+  <artifactId>SFGuestBook</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>JavaServerFaces Maven Webapp</name>
+  <name>SFGuestBook</name>
   <url>http://maven.apache.org</url>
   
   <repositories>
@@ -182,7 +182,7 @@
   </dependencies>
   
   <build>
-    <finalName>JavaServerFaces</finalName>
+    <finalName>SFGuestBook</finalName>
     
     <plugins>
        <plugin>

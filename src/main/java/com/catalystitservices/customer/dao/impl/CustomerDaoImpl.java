@@ -1,10 +1,13 @@
-package com.mkyong.customer.dao.impl;
+package com.catalystitservices.customer.dao.impl;
  
 import java.util.Date;
 import java.util.List;
  
-import com.mkyong.customer.dao.CustomerDao;
-import com.mkyong.customer.model.Customer;
+
+
+import com.catalystitservices.customer.dao.CustomerDao;
+import com.catalystitservices.customer.model.Customer;
+
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
  
 public class CustomerDaoImpl extends 

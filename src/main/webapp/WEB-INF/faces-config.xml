@@ -14,7 +14,7 @@
  	
 	<managed-bean>
 		<managed-bean-name>customer</managed-bean-name>
-		<managed-bean-class>com.mkyong.CustomerBean</managed-bean-class>
+		<managed-bean-class>com.catalystitservices.CustomerBean</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 		<managed-property>
 			<property-name>customerBo</property-name>

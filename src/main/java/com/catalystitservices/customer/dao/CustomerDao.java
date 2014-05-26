@@ -1,8 +1,9 @@
-package com.mkyong.customer.dao;
+package com.catalystitservices.customer.dao;
  
 import java.util.List;
  
-import com.mkyong.customer.model.Customer;
+
+import com.catalystitservices.customer.model.Customer;
  
 public interface CustomerDao{
  

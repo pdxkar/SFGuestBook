@@ -11,17 +11,16 @@
  
     <h:body>
  
-    	<h1>JSF 2.0 + Spring + Hibernate Example</h1>
+    	<h1>GuestBook</h1>
  
  		<h:dataTable value="#{customer.getCustomerList()}" var="c"
     			styleClass="order-table"
     			headerClass="order-table-header"
-    			rowClasses="order-table-odd-row,order-table-even-row"
-    		>
+    			rowClasses="order-table-odd-row,order-table-even-row">
  
     		<h:column>
     			<f:facet name="header">
-    				Customer ID
+    				Guest ID
     			</f:facet>
     				#{c.customerId}
     		</h:column>
@@ -35,7 +34,7 @@
  
  			<h:column>
     			<f:facet name="header">
-    				Address
+    				Email Address
 				</f:facet>
     				#{c.address}
     		</h:column>
@@ -49,12 +48,12 @@
  
     	</h:dataTable>
  
- 		<h2>Add New Customer</h2>
+ 		<h2>Add New Guest</h2>
  		<h:form>
  
  			<h:panelGrid columns="3">
  
-				Name : 
+				Name: 
 				<h:inputText id="name" value="#{customer.name}" 
 					size="20" required="true"
 					label="Name" >
@@ -62,11 +61,11 @@
  
 				<h:message for="name" style="color:red" />
  
-				Address : 
-				<h:inputTextarea id="address" value="#{customer.address}" 
-					cols="30" rows="10" required="true"
+				Email Address : 
+				<h:inputText id="address" value="#{customer.address}" 
+					cols="30" required="true"
 					label="Address" >
-				</h:inputTextarea>
+				</h:inputText>
  
 				<h:message for="address" style="color:red" />
  

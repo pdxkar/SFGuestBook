@@ -1,4 +1,4 @@
-package com.mkyong.customer.model;
+package com.catalystitservices.customer.model;
 
 import java.util.Date;
 
