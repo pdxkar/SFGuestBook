@@ -39,12 +39,12 @@ public class GuestBean implements Serializable{
 		this.guestBo = guestBo;
 	}
  
-	//get all customer data from database
+	//get all guest data from database
 	public List<Guest> getGuestList(){
 		return guestBo.findAllGuest();
 	}
 	
-	//add a new customer data into database
+	//add a new guest data into database
 	public String addGuest(){
 		
 		Guest guest = new Guest();

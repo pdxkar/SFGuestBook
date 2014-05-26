@@ -4,10 +4,10 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
     <class name="com.catalystitservices.guest.model.Guest" 
-        table="customer" catalog="mkyongdb">
+        table="guest" catalog="sfguestbook">
  
         <id name="guestId" type="long">
-            <column name="CUSTOMER_ID" />
+            <column name="GUEST_ID" />
             <generator class="identity" />
         </id>
         <property name="name" type="string">
