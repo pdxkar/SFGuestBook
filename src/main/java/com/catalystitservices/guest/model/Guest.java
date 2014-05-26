@@ -1,11 +1,19 @@
 package com.catalystitservices.guest.model;
 
+import java.util.Date;
+
 public class Guest {
 
-    long guestId;
-    String name;
-    String address;
+    public long guestId;
+    public String name;
+    public String address;
+    public Date createdDate;
+
     boolean editable;
+    
+    public Guest(){
+    	
+    }
 
     public Guest(final long guestId, final String name, final String address) {
         this.guestId = guestId;
@@ -44,50 +52,14 @@ public class Guest {
     public void setAddress(final String address) {
         this.address = address;
     }
+    
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+	
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
 
 }
-//package com.catalystitservices.guest.model;
-//
-//import java.util.Date;
-//
-//public class Guest{
-//	
-//	public long guestId;
-//	public String name;
-//	public String address;
-//	public Date createdDate;
-//	
-//	public boolean editable;
-//	
-//	public long getGuestId() {
-//		return guestId;
-//	}
-//	public void setGuestId(long guestId) {
-//		this.guestId = guestId;
-//	}
-//	public String getName() {
-//		return name;
-//	}
-//	public void setName(String name) {
-//		this.name = name;
-//	}
-//	public String getAddress() {
-//		return address;
-//	}
-//	public void setAddress(String address) {
-//		this.address = address;
-//	}
-//	public Date getCreatedDate() {
-//		return createdDate;
-//	}
-//	public void setCreatedDate(Date createdDate) {
-//		this.createdDate = createdDate;
-//	}
-//	public boolean isEditable() {
-//		return editable;
-//	}
-//	public void setEditable(boolean editable) {
-//		this.editable = editable;
-//	}
-//	
-//}
+
