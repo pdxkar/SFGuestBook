@@ -2,26 +2,26 @@
 	border-collapse:collapse;
 }
 
-.order-table-header{
+.guest-table-header{
 	text-align:center;
 	background:none repeat scroll 0 0 #E5E5E5;
 	border-bottom:1px solid #BBBBBB;
 	padding:16px;
 }
 
-.order-table-odd-row{
+.guest-table-odd-row{
 	text-align:center;
 	background:none repeat scroll 0 0 #FFFFFFF;
 	border-top:1px solid #BBBBBB;
 }
 
-.order-table-even-row{
+.guest-table-even-row{
 	text-align:center;
 	background:none repeat scroll 0 0 #F9F9F9;
 	border-top:1px solid #BBBBBB;
 }
 
-/* .evenRow {
+.evenRow {
 background-color: #F5F5DC;
 }
 .oddRow {
@@ -46,4 +46,4 @@ font-family:verdana,arial,helvetica,sans-serif;
 font-size:13px;
 text-align: center;
 text-transform: uppercase;
-} */
+} 
