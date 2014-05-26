@@ -9,6 +9,8 @@ public class Guest{
 	public String address;
 	public Date createdDate;
 	
+	public boolean editable;
+	
 	public long getGuestId() {
 		return guestId;
 	}
@@ -32,6 +34,12 @@ public class Guest{
 	}
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
+	}
+	public boolean isEditable() {
+		return editable;
+	}
+	public void setEditable(boolean editable) {
+		this.editable = editable;
 	}
 	
 }

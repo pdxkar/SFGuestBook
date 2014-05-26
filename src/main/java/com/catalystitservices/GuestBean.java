@@ -18,27 +18,8 @@ public class GuestBean implements Serializable{
 	
 	public String name;
 	public String address;
+	public boolean editable;
 	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public void setGuestBo(GuestBo guestBo) {
-		this.guestBo = guestBo;
-	}
- 
 	//get all guest data from database
 	public List<Guest> getGuestList(){
 		return guestBo.findAllGuest();
@@ -63,5 +44,33 @@ public class GuestBean implements Serializable{
 		setName("");
 		setAddress("");
 	}
+	
+	public String editAction(Guest guest){
+		guest.setEditable(true);
+		return null;
+	}
+	
+	//getters and setters
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public void setGuestBo(GuestBo guestBo) {
+		this.guestBo = guestBo;
+	}
+ 
+
 	
 }
