@@ -21,7 +21,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
  
     <property name="mappingResources">
 	<list>
-          <value>com/catalystitservices/customer/hibernate/Customer.hbm.xml</value>
+          <value>com/catalystitservices/customer/hibernate/Guest.hbm.xml</value>
 	</list>
      </property>	
  

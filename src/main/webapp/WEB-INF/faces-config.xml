@@ -13,12 +13,12 @@
   	</application>
  	
 	<managed-bean>
-		<managed-bean-name>customer</managed-bean-name>
-		<managed-bean-class>com.catalystitservices.CustomerBean</managed-bean-class>
+		<managed-bean-name>guest</managed-bean-name>
+		<managed-bean-class>com.catalystitservices.GuestBean</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 		<managed-property>
-			<property-name>customerBo</property-name>
-			<value>#{customerBo}</value>
+			<property-name>guestBo</property-name>
+			<value>#{guestBo}</value>
 		</managed-property>
 	</managed-bean>
  

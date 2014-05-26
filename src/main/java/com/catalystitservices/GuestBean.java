@@ -3,10 +3,10 @@ package com.catalystitservices;
 import java.io.Serializable;
 import java.util.List;
 
-import com.catalystitservices.customer.bo.CustomerBo;
-import com.catalystitservices.customer.model.Customer;
+import com.catalystitservices.customer.bo.GuestBo;
+import com.catalystitservices.customer.model.Guest;
 
-public class CustomerBean implements Serializable{
+public class GuestBean implements Serializable{
  
 	/**
 	 * 
@@ -14,7 +14,7 @@ public class CustomerBean implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	//DI via Spring
-	CustomerBo customerBo;
+	GuestBo guestBo;
 	
 	public String name;
 	public String address;
@@ -35,23 +35,23 @@ public class CustomerBean implements Serializable{
 		this.address = address;
 	}
 
-	public void setCustomerBo(CustomerBo customerBo) {
-		this.customerBo = customerBo;
+	public void setGuestBo(GuestBo guestBo) {
+		this.guestBo = guestBo;
 	}
  
 	//get all customer data from database
-	public List<Customer> getCustomerList(){
-		return customerBo.findAllCustomer();
+	public List<Guest> getGuestList(){
+		return guestBo.findAllGuest();
 	}
 	
 	//add a new customer data into database
-	public String addCustomer(){
+	public String addGuest(){
 		
-		Customer cust = new Customer();
-		cust.setName(getName());
-		cust.setAddress(getAddress());
+		Guest guest = new Guest();
+		guest.setName(getName());
+		guest.setAddress(getAddress());
 		
-		customerBo.addCustomer(cust);
+		guestBo.addGuest(guest);
 		
 		clearForm();
 		

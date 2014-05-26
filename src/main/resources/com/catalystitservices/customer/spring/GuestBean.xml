@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
  
-   	<bean id="customerBo" 
-         class="com.catalystitservices.customer.bo.impl.CustomerBoImpl" >
-   		<property name="customerDao" ref="customerDao" />
+   	<bean id="guestBo" 
+         class="com.catalystitservices.customer.bo.impl.GuestBoImpl" >
+   		<property name="guestDao" ref="guestDao" />
    	</bean>
  
-   	<bean id="customerDao" 
-         class="com.catalystitservices.customer.dao.impl.CustomerDaoImpl" >
+   	<bean id="guestDao" 
+         class="com.catalystitservices.customer.dao.impl.GuestDaoImpl" >
    		<property name="sessionFactory" ref="sessionFactory"></property>
    	</bean>
  

@@ -2,18 +2,18 @@ package com.catalystitservices.customer.model;
 
 import java.util.Date;
 
-public class Customer{
+public class Guest{
 	
-	public long customerId;
+	public long guestId;
 	public String name;
 	public String address;
 	public Date createdDate;
 	
-	public long getCustomerId() {
-		return customerId;
+	public long getGuestId() {
+		return guestId;
 	}
-	public void setCustomerId(long customerId) {
-		this.customerId = customerId;
+	public void setGuestId(long guestId) {
+		this.guestId = guestId;
 	}
 	public String getName() {
 		return name;
