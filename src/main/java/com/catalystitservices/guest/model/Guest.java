@@ -7,7 +7,7 @@ public class Guest {
     public long guestId;
     public String name;
     public String address;
-    public Date createdDate;
+//    public Date createdDate;
 
     boolean editable;
     
@@ -53,13 +53,13 @@ public class Guest {
         this.address = address;
     }
     
-	public Date getCreatedDate() {
+/*	public Date getCreatedDate() {
 		return createdDate;
 	}
 	
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
-	}
+	}*/
 
 }
 
