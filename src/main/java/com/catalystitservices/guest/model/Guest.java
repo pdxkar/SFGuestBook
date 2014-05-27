@@ -53,13 +53,5 @@ public class Guest {
         this.address = address;
     }
     
-/*	public Date getCreatedDate() {
-		return createdDate;
-	}
-	
-	public void setCreatedDate(Date createdDate) {
-		this.createdDate = createdDate;
-	}*/
-
 }
 

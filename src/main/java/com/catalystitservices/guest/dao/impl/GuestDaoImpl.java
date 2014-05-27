@@ -11,8 +11,7 @@ public class GuestDaoImpl extends
        HibernateDaoSupport implements GuestDao{
  
 	public void addGuest(Guest guest){
- 
-//		guest.setCreatedDate(new Date());
+
 		getHibernateTemplate().save(guest);
  
 	}

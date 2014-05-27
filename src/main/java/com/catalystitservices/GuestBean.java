@@ -26,35 +26,10 @@ public class GuestBean implements Serializable {
     String address;
     int qty;
     boolean editable = false;
-    
-    
-//    private static final ArrayList<Guest> guestList = 
-//            new ArrayList<Guest>(Arrays.asList(
-//     
-//            new Guest(10L, "guest1", "guest1@email.com"),
-//            new Guest(10L, "guest2", "guest2@email.com"),
-//            new Guest(10L, "guest3", "guest3@email.com"),
-//            new Guest(10L, "guest4", "guest4@email.com"),
-//            new Guest(10L, "guest5", "guest5@email.com"),
-//            new Guest(10L, "guest6", "guest6@email.com")
-//        ));
-    
-  //  public List<Guest> guestList = guestBo.findAllGuest();
-
-        		 
-    
-//    public List<Guest> getGuestList() {
-//    	return guestList;
-//    }
-    
+   
     public List<Guest> getGuestList() {
         return guestBo.findAllGuest();
     }
-
-//    public final int getNbGuest() {
-//        nbGuest = guestList.size();
-//        return nbGuest;
-//    }
 
     public long getGuestId() {
         return guestId;
@@ -109,17 +84,6 @@ public class GuestBean implements Serializable {
         return null;
     }
 
-//    public String addAction() {
-//
-//        final Guest guest = new Guest(this.guestId, this.name, this.address);
-//        guestList.add(guest);
-//        setEditable(false);
-//        setGuestId(0);
-//        setName(null);
-//        setAddress(null);
-//        return null;
-//    }
-    
     public String addGuest(){
     	Guest guest = new Guest();
     	guest.setName(getName());
