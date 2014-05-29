@@ -17,9 +17,22 @@
        <name>java.net m2 repo</name>
        <url>http://download.java.net/maven/2</url>
      </repository>
+     
+     		<repository>
+		<id>prime-repo</id>
+		<name>Prime Repo</name>
+		<url>http://repository.primefaces.org</url>
+	</repository>
   </repositories>
   
   <dependencies>
+  
+	<!--   primefaces -->
+<dependency>  
+    <groupId>org.primefaces</groupId>  
+    <artifactId>primefaces</artifactId>  
+    <version>5.0</version>  
+</dependency> 
   	
   	<!-- MySQL database driver -->
 	<dependency>
@@ -47,14 +60,7 @@
 		<version>2.5.6</version>
 	</dependency>
   	
-  	<!-- Hibernate core -->
-	<dependency>
-	  <groupId>org.hibernate</groupId>
-	  <artifactId>hibernate</artifactId>
-	  <version>3.2.7.ga</version>
-	</dependency>
- 
-	<!-- Hibernate core library dependecy start -->
+ 	<!-- Hibernate core library dependecy start -->
 	
 	
 	 <!-- Hibernate core -->
@@ -75,16 +81,11 @@
       </exclusions>
     </dependency>
 
-
     <dependency>
       <groupId>asm</groupId>
       <artifactId>asm</artifactId>
       <version>3.1</version>
-	
     </dependency>	
-	
-	
-	
 	
 	<dependency>
 	  <groupId>dom4j</groupId>
@@ -120,29 +121,27 @@
 	<!-- Hibernate query library dependecy end -->
   	
   	
-  	<!-- For Java EE Application Server, uncomment this library 
-  	and comment the rest of the libraries
-  	<dependency>
-      <groupId>javax.faces</groupId>
-      <artifactId>jsf-api</artifactId>
-      <version>2.0</version>
-      <scope>provided</scope>
-    </dependency>
-  	-->
-  	
-  	<!-- For Servlet Container like Tomcat -->
-  	<!-- http://download.java.net/maven/2 -->
-	<dependency>
-	  <groupId>com.sun.faces</groupId>
-	  <artifactId>jsf-api</artifactId>
-	  <version>2.1.0-b03</version>
-	</dependency>
-	
-	<dependency>
-	  <groupId>com.sun.faces</groupId>
-	  <artifactId>jsf-impl</artifactId>
-	  <version>2.1.0-b03</version>
-	</dependency>
+
+<!-- 	JSF -->
+			<!-- JSF 2 -->
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>2.1.11</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-impl</artifactId>
+			<version>2.1.11</version>
+		</dependency>
+ 
+<!-- javaee -->
+<dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
 	
 	<!-- EL 2.2 to support method parameter in EL -->
     <dependency>
