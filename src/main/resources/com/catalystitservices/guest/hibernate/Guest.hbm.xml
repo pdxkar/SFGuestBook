@@ -16,8 +16,8 @@
         <property name="address" type="string">
             <column name="ADDRESS" not-null="true" />
         </property>
-        <property name="createdDate" type="timestamp">
+<!--         <property name="createdDate" type="timestamp">
             <column name="CREATED_DATE" length="19" not-null="true" />
-        </property>
+        </property> -->
     </class>
 </hibernate-mapping>

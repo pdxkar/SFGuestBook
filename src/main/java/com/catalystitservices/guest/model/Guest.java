@@ -7,7 +7,7 @@ public class Guest{
 	public long guestId;
 	public String name;
 	public String address;
-	public Date createdDate;
+/*	public Date createdDate;*/
 	
 	public long getGuestId() {
 		return guestId;
@@ -27,11 +27,11 @@ public class Guest{
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Date getCreatedDate() {
+/*	public Date getCreatedDate() {
 		return createdDate;
 	}
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
-	}
+	}*/
 	
 }
