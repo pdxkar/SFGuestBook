@@ -12,7 +12,8 @@
         <h1>GuestBook</h1>
         
         <h:form id="addGuest">
-            <h:dataTable value="#{guest.guestList}" var="g"
+
+  				<h:dataTable value="#{guest.guestList}" var="g"
                          styleClass="guest-table"
                          headerClass="guest-table-header"
                          rowClasses="guest-table-odd-row,guest-table-even-row">
@@ -64,7 +65,7 @@
                 </tr>
  
             </table>
-            <h:commandButton value="Add New guest" action="#{guest.addGuest}" rendered="#{not guest.editable}" /> 
+            <h:commandButton value="Add New guest" action="#{guest.addAction}" rendered="#{not guest.editable}" /> 
 
         </h:form>
     </h:body>
